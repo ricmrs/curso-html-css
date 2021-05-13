@@ -6,7 +6,7 @@ header {
     padding: 10px 20px;
 }
 
-img {
+.logo {
     object-fit: cover;
     width: 60px;
     height: 60px;
@@ -56,13 +56,31 @@ a::before {
     transform: scale(1.08) translateY(4px);
 }
 
+.background-photo {
+    object-fit: fill;
+    position: absolute;
+    height: 797px;
+    width: 100%;
+    border-bottom: 10px solid #000;
+}
+
+.background-blurry {
+    object-fit: fill;
+    position: absolute;
+    width: 67%;
+    height: 797px;
+    border-right: 5px solid #000;
+}
+
 .form-wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 627px;
     height: 282px;
-    margin: 116px 0px 0px 91px;
+    top: 91px;
+    left: 116px;
 }
 
 .quadro {
