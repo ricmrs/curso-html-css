@@ -94,14 +94,6 @@ a::before {
     filter: drop-shadow(10px 10px 0px #000000);
 }
 
-h2 {
-    color: #FFF;
-    font-size: 30px;
-    font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    text-shadow: 4px 4px 0px #000000;
-}
-
 .botoes {
     display: flex;
     width: 627px;
