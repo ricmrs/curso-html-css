@@ -72,28 +72,6 @@ a::before {
     border-right: 5px solid #000;
 }
 
-.form-wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 627px;
-    height: 282px;
-    top: 91px;
-    left: 116px;
-}
-
-.quadro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #3B2C96;
-    width: 627px;
-    height: 184px;
-    filter: drop-shadow(10px 10px 0px #000000);
-}
-
 .botoes {
     display: flex;
     width: 627px;
