@@ -94,16 +94,6 @@ a::before {
     filter: drop-shadow(10px 10px 0px #000000);
 }
 
-h1 {
-    color: #F42B2B;
-    font-size: 40px;
-    font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    padding-bottom: 28px;
-    text-shadow: 4px 4px 0px #000000;
-    -webkit-text-stroke: 1px #000;
-}
-
 h2 {
     color: #FFF;
     font-size: 30px;
