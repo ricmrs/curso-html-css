@@ -1,0 +1,26 @@
+.skills-panel {
+    display: flex;
+    flex-direction: column;
+    background-color: #467CCE;
+    height: 730px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px solid #A5A6F6;
+}
+
+.skills-panel .container {
+    display: flex;
+    justify-content: space-between;
+    height: 480px;
+    width: 960px;
+}
+
+.skills-panel .subtitle {
+    margin-bottom: 60px;
+}
+
+.skills-panel .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

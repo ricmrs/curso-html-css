@@ -1,0 +1,19 @@
+.skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 430px;
+}
+
+.skills .subtitle {
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+.skills .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90px;
+    width: 320px;
+}
