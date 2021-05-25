@@ -1,19 +1,15 @@
-.skills {
+.skill-tec {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 430px;
-}
-
-.skills .subtitle {
+    align-items: center;   
+    font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
     font-size: 25px;
-    margin-bottom: 0px;
+    color: #FFF;
 }
 
-.skills .wrapper {
+.skill-tec .right {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 90px;
-    width: 320px;
 }
