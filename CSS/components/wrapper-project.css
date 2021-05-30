@@ -1,6 +1,5 @@
 .wrapper-project {
     display: flex;
-    flex-wrap: wrap;
     max-width: 1152px;
     margin-left: auto;
     margin-right: auto;

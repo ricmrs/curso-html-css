@@ -7,7 +7,7 @@
     color: #FFF;
 }
 
-.skill-tec .right {
+.skill-tec .column {
     display: flex;
     flex-direction: column;
     justify-content: space-around;

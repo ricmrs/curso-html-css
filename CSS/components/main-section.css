@@ -9,10 +9,10 @@
     margin-bottom: 60px;
 }
 
-.main-section.-project {
+.main-section.-bgBlack {
     background-color: #000;
 }
 
-.main-section.-project .main-title {
+.main-section.-bgBlack .main-title {
     margin-bottom: 50px;
 }

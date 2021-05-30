@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="CSS/components/main-header.css">
     <link rel="stylesheet" href="CSS/components/main-banner.css">
     <link rel="stylesheet" href="CSS/components/main-section.css">
-    <link rel="stylesheet" href="CSS/components/header-logo.css">
+    <link rel="stylesheet" href="CSS/components/main-logo.css">
     <link rel="stylesheet" href="CSS/components/main-button.css">
     <link rel="stylesheet" href="CSS/components/main-title.css">
     <link rel="stylesheet" href="CSS/components/main-subtitle.css">
@@ -20,13 +20,13 @@
     <link rel="stylesheet" href="CSS/components/progress-bar.css">
     <link rel="stylesheet" href="CSS/components/skill-tec.css">
     <link rel="stylesheet" href="CSS/components/wrapper-skill.css">
-    <link rel="stylesheet" href="CSS/components/project-logo.css">
     <link rel="stylesheet" href="CSS/components/wrapper-project.css">
+    <link rel="stylesheet" href="CSS/components/card-project.css">
     
 </head>
 <body>
     <header class="main-header">
-        <img class="header-logo" src="assets/img/Img.JPG" alt="Foto de perfil">
+        <img class="main-logo" src="assets/img/Img.JPG" alt="Foto de perfil">
 
         <nav class="navigation">
             <a class="main-action" href="" lang="en">Skills</a>
@@ -56,56 +56,56 @@
         <div class="wrapper-skill">
             <article class="skill-tec">  
                 <img class="icon" src="assets/img/ico_html5.png" alt="HTML5 logo">
-                <div class="right">
+                <div class="column">
                     <h3 class="title">HTML</h3>
                     <progress class="progress-bar -html" max="100" value="70">70%</progress>
                 </div>
             </article>
             <article class="skill-tec">
                 <img class="icon" src="assets/img/ico_nodejs.png" alt="NodeJS logo">
-                <div class="right">
+                <div class="column">
                     <h3 class="title">NodeJS</h3>
                     <progress class="progress-bar -nodejs" max="100" value="10">10%</progress>
                 </div>
             </article>
             <article class="skill-tec">
                 <img class="icon" src="assets/img/ico_css3.png" alt="CSS logo">
-                <div class="right">
+                <div class="column">
                     <h3 class="title">CSS</h3>
                     <progress class="progress-bar -css" max="100" value="60">60%</progress>
                 </div>
             </article>
             <article class="skill-tec">
                 <img class="icon" src="assets/img/ico_tdd.png" alt="TDD logo">
-                <div class="right">
+                <div class="column">
                     <h3 class="title">TDD</h3>
                     <progress class="progress-bar -tdd" max="100" value="15">15%</progress>
                 </div>
             </article>
             <article class="skill-tec">
                 <img class="icon" src="assets/img/ico_js.png" alt="JavaScript logo">
-                <div class="right">
+                <div class="column">
                     <h3 class="title">JavaScript</h3>
                     <progress class="progress-bar -js" max="100" value="80">80%</progress>
                 </div>
             </article>
             <article class="skill-tec">
                 <img class="icon" src="assets/img/ico_restapi.png" alt="Rest API logo">
-                <div class="right">
+                <div class="column">
                     <h3 class="title">Rest API</h3>
                     <progress class="progress-bar -restapi" max="100" value="18">18%</progress>
                 </div>
             </article>
             <article class="skill-tec">
                 <img class="icon" src="assets/img/ico_react.png" alt="React logo">
-                <div class="right">
+                <div class="column">
                     <h3 class="title">React</h3>
                     <progress class="progress-bar -react" max="100" value="20">20%</progress>
                 </div>
             </article>
             <article class="skill-tec">
                 <img class="icon" src="assets/img/ico_ux.png" alt="UX logo">
-                <div class="right">
+                <div class="column">
                     <h3 class="title">UX</h3>
                     <progress class="progress-bar -ux" max="100" value="10">10%</progress>
                 </div>
@@ -113,15 +113,27 @@
         </div>        
     </section>
     
-    <section class="main-section -project">
+    <section class="main-section -bgBlack">
         <h3 class="main-title -second">Projetos</h3>
         <div class="wrapper-project">
-            <img class="project-logo" src="assets/img/firedlabs.png" alt="Imagem Firedlabs">
-            <img class="project-logo" src="assets/img/collabcode.png" alt="Imagem Collabcode">
-            <img class="project-logo" src="assets/img/portfolio.png" alt="Imagem Portfolio">
+            <a href="https://www.firedlabs.com" target="_blank">
+                <figure class="card-project">
+                    <img class="logo" src="assets/img/firedlabs.png" alt="Imagem Firedlabs">
+                </figure>
+            </a>
+            <a href="https://collabcode.training" target="_blank">
+            <figure class="card-project -blue">
+                <img class="logo" src="assets/img/collabcode.png" alt="Imagem Collabcode">
+            </figure>
+            </a>            
+            <a href="https://ricmrs.github.io/curso-html-css/">
+            <figure class="card-project">
+                <img class="logo" src="assets/img/portfolio.png" alt="Imagem Portfolio">
+            </figure>
+            </a>
         </div>
     </section>
-    
+
 </html>
 
 
