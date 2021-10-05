@@ -1,11 +1,12 @@
 .main-button {
     display: inline-block;
     background-color: #F42B2B;
-    padding: 18px 20px;
+    padding: 20px 20px;
     box-shadow: 5px 5px 0px #000000;
     margin-right: 0;
     transition: transform 100ms linear;
     font-size: 20px;
+    font-weight: 500;
     color: #FFF;
     text-decoration: none;
 }
