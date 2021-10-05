@@ -16,3 +16,12 @@
 .main-section.-bgBlack .main-title {
     margin-bottom: 50px;
 }
+
+.main-section.-mgTitle40 .main-title {
+    margin-bottom: 40px;
+}
+
+.main-section.-mgTitle40 {
+    padding-bottom: 70px;
+    border-color: #000;
+}
