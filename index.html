@@ -25,7 +25,11 @@
     <link rel="stylesheet" href="css/components/wrapper-about.css">
     <link rel="stylesheet" href="css/components/main-text.css">
     <link rel="stylesheet" href="css/components/profile-photo.css">
-        
+    <link rel="stylesheet" href="css/components/main-form.css">
+    <link rel="stylesheet" href="css/components/main-label.css">
+    <link rel="stylesheet" href="css/components/main-input.css">
+    <link rel="stylesheet" href="css/components/main-footer.css">
+
 </head>
 
 <body>
@@ -124,14 +128,14 @@
                 </figure>
             </a>
             <a href="https://ricmrs.github.io/curso-html-css/" target="">
-            <figure class="card-project -blue">
-                <img class="logo" src="" alt="">
-            </figure>
+                <figure class="card-project -blue">
+                    <img class="logo" src="" alt="">
+                </figure>
             </a>            
             <a href="https://ricmrs.github.io/curso-html-css/">
-            <figure class="card-project">
-                <img class="logo" src="" alt="">
-            </figure>
+                <figure class="card-project">
+                    <img class="logo" src="" alt="">
+                </figure>
             </a>
         </div>
     </section>
@@ -149,6 +153,28 @@
             <img class="profile-photo" src="assets/img/Img.JPG" alt="Profile Photo">
         </div>      
     </section>
+
+        
+    <form class="main-form">
+        <legend class="main-title -second">Contatos</legend>
+
+        <label for="name" class="main-label">Nome</label>
+        <input type="text" name="Nome" class="main-input" id="name">
+
+        <label for="email" class="main-label">Email</label>
+        <input type="email" name="Email" class="main-input" id="email">
+
+        <label for="message" class="main-label">Mensagem</label>
+        <textarea type="text" name="Mensagem" class="main-input -hg320" id="message"></textarea>
+
+        <input type="submit" class="main-button -third" value="Enviar">
+    </form> 
+
+    <footer class="main-footer">
+        <a href="">
+            <img class="logo" src="assets/img/linkedin-logo.png" alt="Linkedin logo">
+        </a> 
+    </footer>
         
 </body>
 </html>

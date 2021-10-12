@@ -15,9 +15,9 @@
     content: none;
  }
 
- .main-button:hover {
+.main-button:hover {
     transform: scale(1.08);
- }
+}
  
 .main-button:active {
     transform: scale(1.08) translateY(4px);
@@ -25,4 +25,18 @@
 
 .main-button.-second {
     background-color: #467CCE;
+}
+
+.main-button.-third {
+    font-size: 30px;
+    padding: 15px 626px;
+    margin-top: 20px;
+}
+
+.main-button.-third:hover {
+    transform: scale(1.02);
+}
+
+.main-button.-third:active {
+    transform: scale(1.02) translateY(4px);
 }
