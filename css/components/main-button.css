@@ -29,7 +29,8 @@
 
 .main-button.-third {
     font-size: 30px;
-    padding: 15px 626px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin-top: 20px;
     cursor: pointer;
 }
