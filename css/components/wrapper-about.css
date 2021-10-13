@@ -1,7 +1,8 @@
 .wrapper-about {
-    display: flex;;
+    display: flex;
     padding-left: 100px;
-    padding-right: 180px;
+    padding-right: 100px;
+    justify-content: space-evenly;
 }
 
 .wrapper-about .main-text {
