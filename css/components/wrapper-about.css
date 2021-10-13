@@ -1,8 +1,9 @@
 .wrapper-about {
-    display: flex;
-    height: 268px;
-    max-width: 1450px;
-    justify-content: space-between;
-    margin-right: auto;
-    margin-left: auto;
+    display: flex;;
+    padding-left: 100px;
+    padding-right: 180px;
+}
+
+.wrapper-about .main-text {
+    margin-right: 50px;
 }
