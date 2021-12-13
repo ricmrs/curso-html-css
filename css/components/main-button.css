@@ -1,9 +1,8 @@
 .main-button {
     display: inline-block;
-    background-color: #840032;
+    background-color: var(--color-third);
     padding: 20px 20px;
-    box-shadow: 5px 5px 0px #000000;
-    margin-right: 0;
+    box-shadow: 5px 5px 0px #000;
     transition: transform 100ms linear;
     font-size: 20px;
     font-weight: 500;
@@ -23,11 +22,7 @@
     transform: scale(1.08) translateY(4px);
 }
 
-.main-button.-second {
-    background-color: #03738cef;
-}
-
-.main-button.-third {
+.main-button.-form {
     font-size: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -35,10 +30,10 @@
     cursor: pointer;
 }
 
-.main-button.-third:hover {
+.main-button.-form:hover {
     transform: scale(1.02);
 }
 
-.main-button.-third:active {
+.main-button.-form:active {
     transform: scale(1.02) translateY(4px);
 }

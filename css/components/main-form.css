@@ -1,5 +1,5 @@
 .main-form {
-    background-color: #3A4042;
+    background-color: var(--color-form);
     display: flex;
     flex-direction: column;
     padding: 50px 40px;

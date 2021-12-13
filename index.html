@@ -7,37 +7,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Press+Start+2P&display=swap" rel="stylesheet"> 
     
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/components/main-header.css">
-    <link rel="stylesheet" href="css/components/main-banner.css">
-    <link rel="stylesheet" href="css/components/main-section.css">
-    <link rel="stylesheet" href="css/components/main-logo.css">
-    <link rel="stylesheet" href="css/components/main-button.css">
-    <link rel="stylesheet" href="css/components/main-title.css">
-    <link rel="stylesheet" href="css/components/main-subtitle.css">
-    <link rel="stylesheet" href="css/components/main-box.css">
-    <link rel="stylesheet" href="css/components/main-action.css">
-    <link rel="stylesheet" href="css/components/wrapper-skill.css">
-    <link rel="stylesheet" href="css/components/skill-tec.css">
-    <link rel="stylesheet" href="css/components/progress-bar.css">
-    <link rel="stylesheet" href="css/components/wrapper-project.css">
-    <link rel="stylesheet" href="css/components/card-project.css">
-    <link rel="stylesheet" href="css/components/wrapper-about.css">
-    <link rel="stylesheet" href="css/components/main-text.css">
-    <link rel="stylesheet" href="css/components/profile-photo.css">
-    <link rel="stylesheet" href="css/components/main-form.css">
-    <link rel="stylesheet" href="css/components/main-label.css">
-    <link rel="stylesheet" href="css/components/main-input.css">
-    <link rel="stylesheet" href="css/components/main-footer.css">
+    <link rel="stylesheet" href="css/root.css">
 </head>
 
 <body>
     <header class="main-header">
         <nav class="navigation">
-            <a class="main-action" href="#" lang="en">Skills</a>
-            <a class="main-action" href="#">Projetos</a>
-            <a class="main-action" href="#">Sobre</a>
-            <a class="main-action" href="#">Contatos</a>
+            <a class="main-action" href="#skills" lang="en">Skills</a>
+            <a class="main-action" href="#projects">Projetos</a>
+            <a class="main-action" href="#about">Sobre</a>
+            <a class="main-action" href="#contacts">Contatos</a>
             <a class="main-button" href="#" lang="en">Download CV</a>
         </nav>
     </header>
@@ -50,13 +29,13 @@
             </div>
 
             <div class="navigation">
-                <a class="main-button -second" href="#" lang="en">Download CV</a>
-                <a class="main-button -second" href="#">Contatos</a>
+                <a class="main-button" href="#" lang="en">Download CV</a>
+                <a class="main-button" href="#contacts">Contatos</a>
             </div>
         </div>
     </section>
 
-    <section class="main-section">
+    <section class="main-section" id="skills">
         <h2 class="main-title -second">Skills</h2>
         <div class="wrapper-skill">
             <article class="skill-tec">  
@@ -118,7 +97,7 @@
         </div>        
     </section>
     
-    <section class="main-section -bgBlack">
+    <section class="main-section -bgBlack" id="projects">
         <h2 class="main-title -second">Projetos</h2>
         <div class="wrapper-project">
             <a href="https://ricmrs.github.io/curso-html-css/" target="">
@@ -139,7 +118,7 @@
         </div>
     </section>
 
-    <section class="main-section -mgTitle40">
+    <section class="main-section -mgTitle40" id="about">
         <h2 class="main-title -second">Sobre</h2>
         <div class=wrapper-about>
             <p class=main-text>
@@ -154,7 +133,7 @@
     </section>
 
         
-    <form class="main-form">
+    <form class="main-form" id="contacts">
         <legend class="main-title -second">Contatos</legend>
 
         <label for="name" class="main-label">Nome</label>
@@ -166,7 +145,7 @@
         <label for="message" class="main-label">Mensagem</label>
         <textarea type="text" name="Mensagem" class="main-input -hg320" id="message" required></textarea>
 
-        <input type="submit" class="main-button -third" value="Enviar">
+        <input type="submit" class="main-button -form" value="Enviar">
     </form> 
 
     <footer class="main-footer">

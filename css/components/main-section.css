@@ -1,6 +1,5 @@
 .main-section {
-    background-color: #06004def;
-    border-bottom: 10px solid #80adbf;
+    border-bottom: 10px solid var(--color-second);
     padding-top: 50px;
     padding-bottom: 100px;
 }

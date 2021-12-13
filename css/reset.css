@@ -29,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	font-family: "Fira Code", Arial, Helvetica, sans-serif;
+	font-family: var(--font-fira-code);
+	background-color: var(--color-first);
 	line-height: 1;
 	height: 100vh;
 }
@@ -48,12 +49,14 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+a {
+	text-decoration: none;
+}
 button {
 	border: none;
 	font-family: inherit;
 	line-height: inherit;
 }
-
 progress{
     -webkit-appearance: none;
 	-moz-appearance: none;

@@ -1,0 +1,32 @@
+@import url('reset.css');
+@import url('components/main-header.css');
+@import url('components/main-banner.css');
+@import url('components/main-section.css');
+@import url('components/main-logo.css');
+@import url('components/main-button.css');
+@import url('components/main-title.css');
+@import url('components/main-subtitle.css');
+@import url('components/main-box.css');
+@import url('components/main-action.css');
+@import url('components/wrapper-skill.css');
+@import url('components/skill-tec.css');
+@import url('components/progress-bar.css');
+@import url('components/wrapper-project.css');
+@import url('components/card-project.css');
+@import url('components/wrapper-about.css');
+@import url('components/main-text.css');
+@import url('components/profile-photo.css');
+@import url('components/main-form.css');
+@import url('components/main-label.css');
+@import url('components/main-input.css');
+@import url('components/main-footer.css');
+
+:root {
+    --color-first: #06004def;
+    --color-second: #80adbf;
+    --color-third: #840033e3;
+    --color-form: #3A4042;
+
+    --font-fira-code: "Fira Code", Arial, Helvetica, sans-serif;
+    --font-press-2p: "Press Start 2P", Arial, Helvetica, sans-serif
+}

@@ -4,13 +4,11 @@
     color: #FFF;
     font-size: 20px;
     font-weight: 500;
-    text-decoration: none;
-    margin-right: 30px;
 }
 
 .main-action::before {
     content: "";
-    background-color: #80adbf;
+    background-color: var(--color-second);
     height: 10px;
     width: 10px;
     margin-right: 10px;
