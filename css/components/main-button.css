@@ -1,6 +1,6 @@
 .main-button {
     display: inline-block;
-    background-color: #F42B2B;
+    background-color: #840032;
     padding: 20px 20px;
     box-shadow: 5px 5px 0px #000000;
     margin-right: 0;
@@ -24,7 +24,7 @@
 }
 
 .main-button.-second {
-    background-color: #467CCE;
+    background-color: #03738cef;
 }
 
 .main-button.-third {
