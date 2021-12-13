@@ -1,7 +1,5 @@
 .subtitle {
     color: #FFF;
-    font-size: 30px;
-    font-family: var(--font-press-2p);
-    font-weight: 400;
+    font: 400 1.875em var(--font-press-2p);
     text-shadow: 4px 4px 0px #000;
 }

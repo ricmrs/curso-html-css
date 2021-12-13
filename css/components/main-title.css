@@ -1,13 +1,10 @@
 .main-title {
     color: var(--color-third);
-    font-size: 40px;
-    font-family: var(--font-press-2p);
-    font-weight: 400;
+    font: 400 2.5em var(--font-press-2p);
     text-shadow: 4px 4px 0px #000;
 }
 
 .main-title.-second {
     color: #FFF;
     text-shadow: none;
-    text-align: center;
 }

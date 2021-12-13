@@ -4,10 +4,9 @@
     padding: 20px 20px;
     box-shadow: 5px 5px 0px #000;
     transition: transform 100ms linear;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 500;
     color: #FFF;
-    text-decoration: none;
 }
 
 .main-button::before {
