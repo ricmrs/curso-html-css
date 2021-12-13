@@ -1,8 +1,8 @@
 .main-banner {
     display: flex;
     box-sizing: border-box;
-    background: url(../../assets/img/pxArt.png) no-repeat center center / 100vw 100vh fixed;
-    height: 800px;
+    background: url(../../assets/img/pxArt.png) no-repeat center bottom / cover fixed;
+    height: 88vh;
     border-bottom: 10px solid #000;
     align-items: center;
     justify-content: center;
