@@ -1,7 +1,7 @@
 .main-section {
     border-bottom: 10px solid var(--color-second);
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
 }
 
 .main-section .main-title {
@@ -11,6 +11,7 @@
 
 .main-section.-bgBlack {
     background-color: #000;
+    padding-bottom: 100px;
 }
 
 .main-section.-bgBlack .main-title {
@@ -22,6 +23,6 @@
 }
 
 .main-section.-mgTitle40 {
-    padding-bottom: 70px;
     border-color: #000;
+    padding-bottom: 70px;
 }

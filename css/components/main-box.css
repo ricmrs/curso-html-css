@@ -1,5 +1,4 @@
 .main-box {
-    display: inline-block;
     background-color: var(--color-first);
     box-shadow: 10px 10px 0 #000;
     text-align: center;

@@ -15,10 +15,6 @@
     margin-right: 100px;
 }
 
-.wrapper-skill .skill-tec:nth-child(7), .wrapper-skill .skill-tec:nth-child(8)  {
-    margin-bottom: 0px;
-}
-
 .wrapper-skill .progress-bar {
     width: 320px;
 }

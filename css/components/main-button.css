@@ -1,5 +1,4 @@
 .main-button {
-    display: inline-block;
     background-color: var(--color-third);
     padding: 20px 20px;
     box-shadow: 5px 5px 0px #000;
