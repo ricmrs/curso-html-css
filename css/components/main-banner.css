@@ -1,7 +1,11 @@
 .main-banner {
     display: flex;
     box-sizing: border-box;
-    background: url(../../assets/img/bailey-zindel-pixel.jpg) no-repeat center bottom / cover fixed;
+    background: url(../../assets/img/bailey-zindel-pixel.jpg) no-repeat fixed;
+    background-position: center bottom;
+    background-position-y: 100%;
+    background-position-x: 50%;
+    background-size: cover;
     height: 88vh;
     border-bottom: 10px solid #000;
     align-items: center;
