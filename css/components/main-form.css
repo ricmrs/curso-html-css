@@ -1,11 +1,14 @@
 .main-form {
     background-color: var(--color-form);
-    display: flex;
-    flex-direction: column;
     padding: 50px 40px;
 }
 
 .main-form .main-title {
     margin-bottom: 50px;
     text-align: center;
+}
+
+.main-form .wrapper {
+    display: flex;
+    flex-direction: column;
 }
