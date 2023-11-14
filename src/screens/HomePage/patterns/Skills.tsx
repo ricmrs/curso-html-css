@@ -2,18 +2,24 @@ import Box from "@/components/Box";
 import MoveButton from "@/components/Button/MoveButton";
 import Skill from "@/components/Skill";
 import Text from "@/components/Text";
-import { useTheme } from "@/theme/ThemeProvider";
 import useBreakpoints from "@/utils/mediaQueries/useBreakpoints";
-import { useState } from "react";
+import { useTheme } from "@/theme/ThemeProvider";
+import { useEffect, useState } from "react";
 
 export default function Skills() {
   const { isMd } = useBreakpoints();
   const theme = useTheme();
   const [activeStep, setActiveStep] = useState(0);
+
   const maxSteps = isMd ? 1 : 3;
   const columnGap = 15;
   const wrapperWidth = isMd ? 615 : 250;
   const stepWidth = columnGap + wrapperWidth;
+  const resetStep = () => setActiveStep(0);
+
+  useEffect(() => {
+    window.addEventListener("resize", resetStep)
+  }, [])
 
   return (
     <Box
