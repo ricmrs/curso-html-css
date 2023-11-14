@@ -35,24 +35,25 @@ export default function Projetos() {
             height: "40px",
             width: "40px",
             backgroundColor: theme.colors.primary.x600,
-            visibility: `${activeStep == 0 ? "hidden" : "visible"}`
+            visibility: `${activeStep == 0 ? "hidden" : "visible"}`,
+            display: { xs: "flex", md: "none" }
           }}
           arrowStyleSheets={{ color: theme.colors.accent.x050 }}
         />
         <Box
           styleSheet={{
             flexDirection: "row",
-            maxWidth: `${stepWidth}px`,
             height: "190px",
-            overflow: "hidden"
+            maxWidth: { xs: `${stepWidth}px`, md: "max-content" },
+            overflow: { xs: "hidden", md: "visible" }
           }}
         >
           <Box
             styleSheet={{
               flexDirection: "row",
-              gap: `${stepGap}px`,
-              transform: `translateX(${-activeStep * (stepWidth + stepGap/2)}px)`,
-              transition: "transform 500ms ease-in-out" 
+              gap:{ xs:  `${stepGap}px`, md: "35px" },
+              transform: { xs: `translateX(${-activeStep * (stepWidth + stepGap/2)}px)`, md: "translateX(0)" },
+              transition: { xs: "transform 500ms ease-in-out", md: "none" }
             }}
           >
             <Projeto nome="primeiro" />
@@ -68,7 +69,8 @@ export default function Projetos() {
             height: "40px",
             width: "40px",
             backgroundColor: theme.colors.primary.x600,
-            visibility: `${activeStep == maxSteps ? "hidden" : "visible"}`
+            visibility: `${activeStep == maxSteps ? "hidden" : "visible"}`,
+            display: { xs: "flex", md: "none" }
           }}
           arrowStyleSheets={{ color: theme.colors.accent.x050 }}
         />

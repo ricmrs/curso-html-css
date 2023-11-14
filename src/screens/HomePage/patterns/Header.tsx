@@ -16,11 +16,11 @@ export default function Header() {
       tag="header"
       styleSheet={{
         width: "100%",
-        height: "65px",
         backgroundColor: theme.colors.primary.x600,
         borderBottom: "5px solid #000",
+        justifyContent: "center",
         alignItems: "flex-end",
-        justifyContent: "center"
+        height: { xs: "65px", md: "85px" }
       }}
     >
         <Button
@@ -28,7 +28,7 @@ export default function Header() {
           styleSheet={{
             alignSelf: "flex-end",
             marginRight: "14px",
-            display: { xs: 'flex', sm: 'none' }
+            display: { xs: "flex", md: "none" }
           }}
         >
           <Icon 
@@ -47,6 +47,7 @@ export default function Header() {
         >
           <NavBar onClick={() => setShowModal(false)}/>
         </Modal>}
+        <NavBar styleSheet={{ display: { xs: "none", md: "flex" }, flexDirection: "row", marginRight: "30px" }}/>
     </Box>
   )
 }

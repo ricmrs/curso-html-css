@@ -35,7 +35,7 @@ export default function Skills() {
             width: "35px",
             visibility: `${activeStep == 0 ? "hidden" : "visible"}`
           }} />
-        <Box styleSheet={{ overflow: "hidden", maxWidth: `${stepWidth}px` }}>
+        <Box styleSheet={{ overflow: "hidden", maxWidth: { xs: `${stepWidth}px`, md: "max-content"} }}>
           <Box
             styleSheet={{
               flexWrap: "wrap",
