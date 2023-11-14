@@ -3,13 +3,17 @@ import MoveButton from "@/components/Button/MoveButton";
 import Skill from "@/components/Skill";
 import Text from "@/components/Text";
 import { useTheme } from "@/theme/ThemeProvider";
+import useBreakpoints from "@/utils/mediaQueries/useBreakpoints";
 import { useState } from "react";
 
 export default function Skills() {
+  const { isMd } = useBreakpoints();
   const theme = useTheme();
   const [activeStep, setActiveStep] = useState(0);
-  const maxSteps = 3;
-  const stepWidth = 265;
+  const maxSteps = isMd ? 1 : 3;
+  const columnGap = 15;
+  const wrapperWidth = isMd ? 615 : 250;
+  const stepWidth = columnGap + wrapperWidth;
 
   return (
     <Box
@@ -35,14 +39,16 @@ export default function Skills() {
             width: "35px",
             visibility: `${activeStep == 0 ? "hidden" : "visible"}`
           }} />
-        <Box styleSheet={{ overflow: "hidden", maxWidth: { xs: `${stepWidth}px`, md: "max-content"} }}>
+        <Box styleSheet={{ overflow: "hidden", maxWidth: { xs: stepWidth, md: "max-content"} }}>
           <Box
             styleSheet={{
               flexWrap: "wrap",
-              maxHeight: "360px",
-              transform: `translateX(${-activeStep * (stepWidth)}px)`,
+              transform: `translateX(${-activeStep * stepWidth}px)`,
               transition: "transform 500ms ease-in-out",
-              columnGap: "15px"
+              columnGap: columnGap,
+              width: wrapperWidth,
+              rowGap: { xs: "0px", md: "10px" },
+              maxHeight: { xs: "360px", md: "400px" },
             }}
           >
             <Skill name="html" progress={95} />

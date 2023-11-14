@@ -16,7 +16,14 @@ export default function Skill({ name, progress, styleSheet, ...props }: SkillPro
   const skill = skills[name];
     
   return (
-    <Box styleSheet={{ height: "90px", width: "250px", gap: "15px", paddingVertical: "12px",  flexDirection: "row"}}>
+    <Box 
+      styleSheet={{ 
+        height: "90px", 
+        gap: "15px", 
+        paddingVertical: "12px",  
+        flexDirection: "row",
+        width: { xs: "250px", md: "300px" } 
+      }}>
       <Icon name={name} viewBox={[60, 69]} styleSheet={{ width: "auto", height: "auto" }}/>
       <Box styleSheet={{ gap: "5px" }}>
         <Text tag="h2" variant="heading2" colorVariant="neutral" colorVariantEnabled>{skill.name.toUpperCase()}</Text>

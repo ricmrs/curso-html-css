@@ -1,6 +1,7 @@
 import { StyleSheet } from "@/theme/StyleSheet";
 import React from 'react';
 import Box from "../Box";
+import useBreakpoints from "@/utils/mediaQueries/useBreakpoints";
 
 interface ProgressBarProps {
   progress: number;
@@ -9,7 +10,8 @@ interface ProgressBarProps {
 }
 
 export default function ProgressBar({ progress, color, styleSheet, ...props }: ProgressBarProps) {
-  const barWidth = 170;
+  const { isMd } = useBreakpoints();
+  const barWidth = isMd ? 200 : 170;
   const barHeight = 25;
 
   return (
