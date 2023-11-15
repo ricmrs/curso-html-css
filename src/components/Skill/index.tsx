@@ -22,7 +22,7 @@ export default function Skill({ name, progress, styleSheet, ...props }: SkillPro
         paddingVertical: "12px",  
         flexDirection: "row",
         height:{ xs: "90px", md: "90px", xl: "120px" }, 
-        width: { xs: "250px", md: "300px", xl: "450px" } 
+        width: { xs: "250px", md: "300px", xl: "430px" } 
       }}>
       <Icon name={name} viewBox={[60, 68]} styleSheet={{ width: "auto", height: "auto" }}/>
       <Box styleSheet={{ gap: { xs: "5px", xl: "8px" } }}>

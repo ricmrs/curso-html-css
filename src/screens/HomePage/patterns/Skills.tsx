@@ -13,7 +13,7 @@ export default function Skills() {
 
   const maxSteps = isXl ? 1 : ((isMd || isLg) ? 1 : 3);
   const columnGap = 15;
-  const wrapperWidth = isXl ? 915 : ((isMd || isLg) ? 615 : 250);
+  const wrapperWidth = isXl ? 875 : ((isMd || isLg) ? 615 : 250);
   const stepWidth = columnGap + wrapperWidth;
   const resetStep = () => setActiveStep(0);
 
@@ -35,7 +35,7 @@ export default function Skills() {
       }}
     >
       <Text tag="h2" variant="heading1" colorVariant="neutral" colorVariantEnabled>Skills</Text>
-      <Box styleSheet={{ flexDirection: "row", alignItems: "center", gap: "15px", paddingTop: "35px" }}>
+      <Box styleSheet={{ flexDirection: "row", alignItems: "center", gap: { xs: "15px", md: "20px", lg: "40px" }, paddingTop: "35px" }}>
         <MoveButton
           type="previous"
           onClick={() => setActiveStep(activeStep - 1)}
