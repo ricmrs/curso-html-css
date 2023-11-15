@@ -18,15 +18,15 @@ export default function Projetos() {
       id="projetos"
       styleSheet={{
         backgroundColor: theme.colors.primary.x200,
-        height: "380px",
         width: "100%",
         alignItems: "center",
         borderBottom: "5px solid #000",
-        paddingTop: "30px"
+        height: { xs: "380px", xl: "500px" },
+        paddingVertical: { xs: "30px", xl: "40px" }
       }}
     >
       <Text tag="h2" variant="heading1" colorVariant="neutral" colorVariantEnabled>Projetos</Text>
-      <Box styleSheet={{ flexDirection: "row", alignItems: "center", gap: "30px", paddingTop: "40px" }}>
+      <Box styleSheet={{ flexDirection: "row", alignItems: "center", gap: "30px", paddingVertical: { xs: "40px", xl: "60px" } }}>
         <MoveButton
           type="previous"
           onClick={() => setActiveStep(activeStep - 1)}
@@ -43,17 +43,17 @@ export default function Projetos() {
         <Box
           styleSheet={{
             flexDirection: "row",
-            height: "190px",
-            maxWidth: { xs: `${stepWidth}px`, md: "max-content" },
-            overflow: { xs: "hidden", md: "visible" }
+            height: { xs: "190px", md: "190px", xl: "260px" },
+            maxWidth: { xs: `${stepWidth}px`, md: "max-content", xl: "max-content" },
+            overflow: { xs: "hidden", md: "visible", xl: "visible" }
           }}
         >
           <Box
             styleSheet={{
               flexDirection: "row",
-              gap:{ xs:  `${stepGap}px`, md: "35px" },
-              transform: { xs: `translateX(${-activeStep * (stepWidth + stepGap/2)}px)`, md: "translateX(0)" },
-              transition: { xs: "transform 500ms ease-in-out", md: "none" }
+              gap:{ xs:  `${stepGap}px`, md: "35px", xl: "130px" },
+              transform: { xs: `translateX(${-activeStep * (stepWidth + stepGap/2)}px)`, md: "translateX(0)", xl: "translateX(0)" },
+              transition: { xs: "transform 500ms ease-in-out", md: "none", xl: "none" }
             }}
           >
             <Projeto nome="primeiro" />

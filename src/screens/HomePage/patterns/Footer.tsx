@@ -8,13 +8,13 @@ export default function Footer(){
       tag="footer"
       styleSheet={{
         backgroundColor: "#000",
-        height: "60px",
         width: "100%",
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+        height: { xs: "60px", xl: "80px"}
       }}
     >
-      <Box styleSheet={{ flexDirection: "row", gap: "90px" }}>
+      <Box styleSheet={{ flexDirection: "row", gap: { xs: "90px", xl: "180px" } }}>
         <Link href="/">
           <Icon name="linkedin" viewBox={[35, 35]}/>
         </Link>

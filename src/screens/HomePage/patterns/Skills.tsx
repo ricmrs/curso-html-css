@@ -7,13 +7,13 @@ import { useTheme } from "@/theme/ThemeProvider";
 import { useEffect, useState } from "react";
 
 export default function Skills() {
-  const { isMd } = useBreakpoints();
+  const { isMd, isLg, isXl } = useBreakpoints();
   const theme = useTheme();
   const [activeStep, setActiveStep] = useState(0);
 
-  const maxSteps = isMd ? 1 : 3;
+  const maxSteps = isXl ? 1 : ((isMd || isLg) ? 1 : 3);
   const columnGap = 15;
-  const wrapperWidth = isMd ? 615 : 250;
+  const wrapperWidth = isXl ? 915 : ((isMd || isLg) ? 615 : 250);
   const stepWidth = columnGap + wrapperWidth;
   const resetStep = () => setActiveStep(0);
 
@@ -27,7 +27,7 @@ export default function Skills() {
       id="skills"
       styleSheet={{
         backgroundColor: theme.colors.primary.x600,
-        height: "540px",
+        height: { xs: "540px", xl: "850px" },
         width: "100%",
         alignItems: "center",
         justifyContent: "center",
@@ -43,9 +43,10 @@ export default function Skills() {
           backgroundStyleSheets={{
             height: "35px",
             width: "35px",
+            transform: { xl: "scale(1.5)"},
             visibility: `${activeStep == 0 ? "hidden" : "visible"}`
           }} />
-        <Box styleSheet={{ overflow: "hidden", maxWidth: { xs: stepWidth, md: "max-content"} }}>
+        <Box styleSheet={{ overflow: "hidden", maxWidth: { xs: stepWidth, md: "max-content", xl: "max-content" }}}>
           <Box
             styleSheet={{
               flexWrap: "wrap",
@@ -53,8 +54,8 @@ export default function Skills() {
               transition: "transform 500ms ease-in-out",
               columnGap: columnGap,
               width: wrapperWidth,
-              rowGap: { xs: "0px", md: "10px" },
-              maxHeight: { xs: "360px", md: "400px" },
+              rowGap: { xs: "0px", md: "10px", xl: "30px" },
+              maxHeight: { xs: "360px", md: "400px", xl: "570px" },
             }}
           >
             <Skill name="html" progress={95} />
@@ -80,6 +81,7 @@ export default function Skills() {
           backgroundStyleSheets={{
             height: "35px",
             width: "35px",
+            transform: { xl: "scale(1.5)"},
             visibility: `${activeStep == maxSteps ? "hidden" : "visible"}`
           }} />
       </Box>

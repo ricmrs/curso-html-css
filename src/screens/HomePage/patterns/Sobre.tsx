@@ -15,13 +15,13 @@ export default function Sobre(){
         width: "100%",
         alignItems: "center",
         borderBottom: "5px solid #000",
-        paddingTop: "30px"
+        paddingTop: { xs: "30px", xl: "40px" }
       }}
     >
       <Text tag="h2" variant="heading1" colorVariant="neutral" colorVariantEnabled>Sobre</Text>
       <Text variant="body" colorVariant="neutral" colorVariantEnabled
         styleSheet={{
-          marginHorizontal: "20px",
+          marginHorizontal: { xs: "20px", xl: "50px" },
           paddingVertical: "35px"
         }}
       >

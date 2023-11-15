@@ -28,7 +28,7 @@ export default function NavBar({ onClick, styleSheet }: NavBarProps) {
 
   return (
     <Box tag="nav" styleSheet={{
-      gap: "30px",
+      gap: { xs: "30px", md: "30px", xl: "60px" },
       ...styleSheet
     }}>
       <Link href="#skills" variant="heading3" styleSheet={{ ...linkStyles }} onClick={onClick}><Box styleSheet={{ ...boxStyles }}/>Skills</Link>

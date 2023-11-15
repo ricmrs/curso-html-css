@@ -18,7 +18,7 @@ export default function MoveButton({ type, arrowStyleSheets, backgroundStyleShee
         styleSheet={{ 
           alignSelf: "center", 
           backgroundColor: theme.colors.accent.x500, 
-          boxShadow: "3px 3px 0px 0px #000", 
+          boxShadow: { xs: "3px 3px 0px 0px #000", xl: "5px 5px 0px 0px #000"}, 
           ...backgroundStyleSheets 
         }}
         {...props}

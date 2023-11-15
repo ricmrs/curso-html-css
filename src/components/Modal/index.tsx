@@ -59,11 +59,10 @@ function Modal({ onClose, children }: ModalProps) {
   }
 };
 
-const StyledModalBody = styled.nav`
+const StyledModalBody = styled.div`
   padding-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
 `;
 
 const StyledModalHeader = styled.div`

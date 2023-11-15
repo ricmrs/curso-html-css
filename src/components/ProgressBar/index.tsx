@@ -10,9 +10,9 @@ interface ProgressBarProps {
 }
 
 export default function ProgressBar({ progress, color, styleSheet, ...props }: ProgressBarProps) {
-  const { isMd } = useBreakpoints();
-  const barWidth = isMd ? 200 : 170;
-  const barHeight = 25;
+  const { isMd, isLg, isXl } = useBreakpoints();
+  const barWidth = isXl ? 300 : ((isMd || isLg) ? 200 : 170);
+  const barHeight = isXl ? 30 : 25;
 
   return (
     <Box

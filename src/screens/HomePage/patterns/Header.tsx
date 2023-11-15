@@ -20,7 +20,7 @@ export default function Header() {
         borderBottom: "5px solid #000",
         justifyContent: "center",
         alignItems: "flex-end",
-        height: { xs: "65px", md: "85px" }
+        height: { xs: "65px", md: "85px", xl: "95px" }
       }}
     >
         <Button
@@ -47,7 +47,12 @@ export default function Header() {
         >
           <NavBar onClick={() => setShowModal(false)}/>
         </Modal>}
-        <NavBar styleSheet={{ display: { xs: "none", md: "flex" }, flexDirection: "row", marginRight: "30px" }}/>
+        <NavBar 
+          styleSheet={{ 
+            flexDirection: "row", 
+            display: { xs: "none", md: "flex", xl: "flex" }, 
+            marginRight: { xs: "30px", md: "30px", xl: "65px" } 
+          }}/>
     </Box>
   )
 }
