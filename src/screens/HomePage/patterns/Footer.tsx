@@ -15,7 +15,7 @@ export default function Footer(){
       }}
     >
       <Box styleSheet={{ flexDirection: "row", gap: { xs: "90px", xl: "180px" } }}>
-        <Link href="/">
+        <Link href="https://www.linkedin.com/in/ricardo-macedo-rosa-silva-bbbb22196/">
           <Icon name="linkedin" viewBox={[35, 35]}/>
         </Link>
         <Link href="https://github.com/ricmrs">
