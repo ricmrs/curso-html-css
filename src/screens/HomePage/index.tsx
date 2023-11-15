@@ -29,7 +29,7 @@ export default function HomePage() {
         <Sobre />
       </Box>
       <Footer />
-      <Box styleSheet={{ backgroundColor: theme.colors.neutral.x400, paddingVertical: "5px" }}>
+      <Box styleSheet={{ backgroundColor: theme.colors.neutral.x700, paddingVertical: "5px" }}>
         <Text
           variant="heading5" 
           styleSheet={{ 
@@ -37,15 +37,14 @@ export default function HomePage() {
             alignItems: "center", 
             justifyContent: "center",
             gap: "10px",
-            color: theme.colors.neutral.x000
+            color: theme.colors.neutral.x200
           }}
         >
           Icons by
           <Link 
             href='https://www.icons8.com.br' 
-            colorVariant="neutral" 
-            colorVariantEnabled 
             variant="heading5"
+            styleSheet={{ color: theme.colors.neutral.x000, hover: { color: theme.colors.neutral.x200 }}}
           >
             icons8
           </Link>
