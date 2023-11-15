@@ -52,7 +52,11 @@ export const typography = {
     },
     body: {
       fontFamily: "'Fira Code', sans-serif",
-      fontSize: "18px"
+      fontSize: {
+        xs: "18px",
+        md: "18px",
+        xl: "24px"
+      }
     },
   }
 } as const;

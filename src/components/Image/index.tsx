@@ -2,7 +2,7 @@ import { BaseComponent } from "@/theme/BaseComponent";
 import { StyleSheet } from "@/theme/StyleSheet";
 
 interface ImageProps {
-  srcset?: { xs: string, sm?: string , md?: string, lg?: string, xl?: string }
+  srcset?: { xs?: string, sm?: string , md?: string, lg?: string, xl?: string }
   alt: string;
   styleSheet?: StyleSheet; 
 }
