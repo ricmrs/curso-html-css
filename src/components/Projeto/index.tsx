@@ -21,7 +21,7 @@ export default function Projeto({ nome, src, href }: ProjetoProps) {
         backgroundColor: theme.colors.accent.x050,
         transition: "transform 150ms ease-out",
         hover: {
-          transform: "scale(1.1)",
+          transform: { md: "scale(1.1)" },
         }
       }}
     >
