@@ -56,9 +56,9 @@ export default function Projetos() {
               transition: { xs: "transform 500ms ease-in-out", md: "none", xl: "none" }
             }}
           >
-            <Projeto nome="primeiro" />
-            <Projeto nome="segundo" />
-            <Projeto nome="terceiro" />
+            <Projeto nome="space tourism website" src="assets/space-tourism-website.png" href="https://space-tourism-website-frontendmentor.vercel.app/"/>
+            <Projeto nome="rock paper scissores" src="assets/rock-paper-scissors.png" href="https://rock-paper-scissors-kohl-two.vercel.app/"/>
+            <Projeto nome="jogo da velha" src="assets/jogo-da-velha.png" href="https://ricmrs.github.io/jogo-da-velha/"/>
           </Box>
         </Box>
         <MoveButton
