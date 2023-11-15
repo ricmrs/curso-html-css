@@ -37,8 +37,27 @@ export default function Banner() {
           gap: { xs: "20px", md: "20px", xl: "35px" }
         }}
       >
-        <Text tag="h1" variant="heading1" styleSheet={{ color: theme.colors.accent.x300, textShadow: "3px 3px 0px #000" }}>{!isSmallWindow ? "Ricardo Macedo" : "@ricmrs"}</Text>
-        <Text tag="h2" variant="heading2" colorVariant="accent" colorVariantEnabled styleSheet={{ textShadow: "3px 3px 0px #000" }}>{!isSmallWindow ? "FullStack Developer" : "FullStack Dev"}</Text>
+        <Text 
+          tag="h1" 
+          variant="heading1" 
+          styleSheet={{ 
+            color: theme.colors.accent.x300, 
+            textShadow: "3px 3px 0px #000",
+            textAlign: "center" 
+          }}>
+            {!isSmallWindow ? "Ricardo Macedo" : "@ricmrs"}
+        </Text>
+        <Text 
+          tag="h2" 
+          variant="heading2" 
+          colorVariant="accent" 
+          colorVariantEnabled 
+          styleSheet={{ 
+            textShadow: "3px 3px 0px #000",
+            textAlign: "center" 
+          }}>
+            {!isSmallWindow ? "FullStack Developer" : "FullStack Dev"}
+        </Text>
       </Box>
     </Box>
 
