@@ -18,7 +18,11 @@ export default function Projeto({ nome, src, href }: ProjetoProps) {
         width: { xs: "180px", xl: "250px" },
         height: { xs: "180px", xl: "250px" },
         boxShadow: "10px 10px 0px 0px #000",
-        backgroundColor: theme.colors.accent.x050
+        backgroundColor: theme.colors.accent.x050,
+        transition: "transform 150ms ease-out",
+        hover: {
+          transform: "scale(1.1)",
+        }
       }}
     >
       <Link href={href}>

@@ -30,6 +30,10 @@ export default function Button({
         alignSelf: 'flex-start',
         alignItems: 'center',
         justifyContent: 'center',
+        transition: "transform 150ms ease-out",
+        hover: {
+          transform: "scale(1.2)",
+        },
         // [Color + Variant]
         ...(colorVariantEnabled && {...colorVariantBy(theme, colorVariant!, variant!)}),
         // [Size]
