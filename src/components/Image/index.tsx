@@ -2,27 +2,18 @@ import { BaseComponent } from "@/theme/BaseComponent";
 import { StyleSheet } from "@/theme/StyleSheet";
 
 interface ImageProps {
-  srcset?: { xs?: string, sm?: string , md?: string, lg?: string, xl?: string }
+  src: string
   alt: string;
-  styleSheet?: StyleSheet; 
+  styleSheet?: StyleSheet;
 }
-export default function Image({ alt, srcset, styleSheet, ...props }: ImageProps) {
+export default function Image({ alt, src, styleSheet, ...props }: ImageProps) {
   return (
     <BaseComponent
-      as='picture'
-      styleSheet={{...styleSheet}}
-    >
-      {srcset?.xl && <BaseComponent as="source" srcSet={srcset?.xl} media="(min-width: 1200px)"/>}
-      {srcset?.lg && <BaseComponent as="source" srcSet={srcset?.lg} media="(min-width: 992px)"/>}
-      {srcset?.md && <BaseComponent as="source" srcSet={srcset?.md} media="(min-width: 768px)"/>}
-      {srcset?.sm && <BaseComponent as="source" srcSet={srcset?.sm} media="(min-width: 480px)"/>}
-      <BaseComponent 
-        as="img"
-        src={srcset?.xs}
-        alt={alt}
-        styleSheet={{...styleSheet}}
-        {...props}
-      />
-    </BaseComponent>
+      as="img"
+      src={src}
+      alt={alt}
+      styleSheet={{ ...styleSheet }}
+      {...props}
+    />
   )
 }
