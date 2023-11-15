@@ -13,7 +13,7 @@ export default function HomePage() {
 
   return (
     <>
-      <Head><title>@ricmrs - fullstack dev</title></Head>
+      <Head><title>@ricmrs</title></Head>
       <Header />
       <Box tag="main"
         styleSheet={{
